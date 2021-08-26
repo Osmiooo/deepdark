@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "deepdark",
+  "version": "${version}",
+
+  "name": "Deep Dark",
+  "description": "Adds sculk blocks to 1.18",
+  "authors": [
+    "Osmiooo"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/deepdark/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.osmiooo.deep.dark.DeepDark"
+    ],
+    "client": [
+      "com.osmiooo.deep.dark.DeepDarkClient"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
