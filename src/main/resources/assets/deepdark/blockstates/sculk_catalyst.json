@@ -1,7 +1,6 @@
 {
     "variants": {
-        "": {
-            "model": "deepdark:block/sculk_catalyst"
-        }
+        "bloom=false": { "model": "deepdark:block/sculk_catalyst" },
+        "bloom=true": { "model": "deepdark:block/sculk_catalyst_bloom" }
     }
 }

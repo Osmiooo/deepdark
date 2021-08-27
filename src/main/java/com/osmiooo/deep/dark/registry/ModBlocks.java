@@ -15,9 +15,9 @@ import net.minecraft.util.registry.Registry;
 public abstract class ModBlocks {
 
     public static final Block SCULK_BLOCK = new Block(FabricBlockSettings.of(Material.SCULK).strength(1.5f).breakByTool(FabricToolTags.HOES).requiresTool().sounds(BlockSoundGroup.SCULK_SENSOR));
-    public static final Block SCULK_CATALYST = new Block(FabricBlockSettings.of(Material.SCULK).strength(1.5f).breakByTool(FabricToolTags.HOES).requiresTool().sounds(BlockSoundGroup.SCULK_SENSOR));
+    public static final Block SCULK_CATALYST = new Sculk_catalyst(FabricBlockSettings.of(Material.SCULK).strength(1.5f).breakByTool(FabricToolTags.HOES).requiresTool().sounds(BlockSoundGroup.SCULK_SENSOR));
     public static final Block SCULK_SHRIEKER = new Block(FabricBlockSettings.of(Material.SCULK).strength(1.5f).breakByTool(FabricToolTags.HOES).requiresTool().sounds(BlockSoundGroup.SCULK_SENSOR).nonOpaque());
-    public static final Block SCULK_VEIN = new Block(FabricBlockSettings.of(Material.SCULK).strength(0.1f).breakByTool(FabricToolTags.HOES).sounds(BlockSoundGroup.SCULK_SENSOR).nonOpaque().noCollision());
+    public static final Block SCULK_VEIN = new Sculk_vein(FabricBlockSettings.of(Material.SCULK).strength(0.1f).breakByTool(FabricToolTags.HOES).sounds(BlockSoundGroup.SCULK_SENSOR).nonOpaque().noCollision());
 
     public static void RegisterBlocks() {
 
