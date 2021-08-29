@@ -11,6 +11,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.ScheduledTick;
 import net.minecraft.world.World;
 
 public class Sculk_catalyst extends Block {
@@ -25,6 +26,7 @@ public class Sculk_catalyst extends Block {
     }
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         world.setBlockState(pos, state.with(BLOOM, true));
+        world.getBlockTickScheduler().schedule(pos, this, 30);
         return ActionResult.SUCCESS;
     }
     }
